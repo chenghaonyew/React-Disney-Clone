@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCR2jHXYMP2uHMWvyZWIRwZYBXsTVfX7u0",
   authDomain: "disneyplus-clone-7a770.firebaseapp.com",
