@@ -2,10 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import { Provider } from "react-redux";
+import store from "./app/store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* Wrap the App with the login functionality created */}
+    {/* Once login, the App will have access to everything inside the store */}
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
